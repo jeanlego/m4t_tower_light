@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "m4t_tower_light"
+version = "1.0.0"
+description = "M4T Tower Light library"
+authors = ["Jean-Philippe Legault <jlegaul@without.rest>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0"
+pyserial = "^3.5"
+
+[tool.poetry.scripts]
+m4ttl = "cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
